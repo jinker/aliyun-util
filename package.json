@@ -1,0 +1,26 @@
+{
+  "name": "aliyun-util",
+  "version": "1.0.0",
+  "description": "阿里云工具包",
+  "main": "build/index.js",
+  "repository": "https://github.com/jinker/aliyun-util.git",
+  "author": "jinker <jinkerjiang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "js-base64": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "@types/js-base64": "^2.3.1",
+    "gts": "^0.9.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
+  }
+}
